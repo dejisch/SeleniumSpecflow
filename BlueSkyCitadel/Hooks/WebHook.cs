@@ -29,7 +29,7 @@ namespace BlueSkyCitadel.Hooks
         [AfterScenario]
         public void AfterScenario()
         {
-            //TODO: implement logic that has to run after executing each scenario
+            driver.Quit();
         }
     }
 }

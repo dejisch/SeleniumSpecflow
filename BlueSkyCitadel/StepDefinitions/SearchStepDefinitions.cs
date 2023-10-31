@@ -1,4 +1,5 @@
 using BlueSkyCitadel.Hooks;
+using BlueSkyCitadel.PageObjects;
 using OpenQA.Selenium;
 using System;
 using TechTalk.SpecFlow;
@@ -9,6 +10,7 @@ namespace BlueSkyCitadel.StepDefinitions
     public class SearchStepDefinitions
     {
         public IWebDriver driver = WebHook.driver;
+        SearchPage _searchPage = new SearchPage();
 
         [Given(@"I navigate to PrepMajor\.com")]
         public void GivenINavigateToPrepMajor_Com()
@@ -19,13 +21,13 @@ namespace BlueSkyCitadel.StepDefinitions
         [When(@"I click on the search field")]
         public void WhenIClickOnTheSearchField()
         {
-           // throw new PendingStepException();
+            _searchPage.ClickSearchField();
         }
 
         [When(@"I type automation in the search field")]
         public void WhenITypeAutomationInTheSearchField()
         {
-           // throw new PendingStepException();
+           _searchPage.TypeIntoSearchField();
         }
 
         [When(@"I click on the search button")]
