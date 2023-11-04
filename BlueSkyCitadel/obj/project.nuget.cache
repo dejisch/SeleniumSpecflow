@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dyaY6Z27TOc22hZCjfk/Sg9ROjukKIYsyNhOLBXfsKcac5TSCkfwmdLaFf0lFtUMzoTzt7/jklt5q/NRf+pbyg==",
+  "dgSpecHash": "uQjfg56rqMAL7N25mD9wXBfGFTJdZ5IQ+1NTEokP+5FiARDFf32/IkI3wOCK1FEq74w75K7IlIseR2tr3hnZ7A==",
   "success": true,
-  "projectFilePath": "C:\\BlueSkyCitadel\\Automation\\BlueSkyCitadel2\\SeleniumSpecflow\\BlueSkyCitadel\\BlueSkyCitadel.csproj",
+  "projectFilePath": "C:\\BlueSkyCitadel\\Automation\\BlueSkyCitadel3\\SeleniumSpecflow\\BlueSkyCitadel\\BlueSkyCitadel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dejis\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\dejis\\.nuget\\packages\\fluentassertions\\6.2.0\\fluentassertions.6.2.0.nupkg.sha512",

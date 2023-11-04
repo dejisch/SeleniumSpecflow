@@ -1,5 +1,6 @@
 using BlueSkyCitadel.Hooks;
 using BlueSkyCitadel.PageObjects;
+using FluentAssertions;
 using OpenQA.Selenium;
 using System;
 using TechTalk.SpecFlow;
@@ -33,13 +34,22 @@ namespace BlueSkyCitadel.StepDefinitions
         [When(@"I click on the search button")]
         public void WhenIClickOnTheSearchButton()
         {
-           // throw new PendingStepException();
+            _searchPage.ClickSearchButton();
         }
 
         [Then(@"the result page is displayed")]
         public void ThenTheResultPageIsDisplayed()
         {
-           // throw new PendingStepException();
+            //validate your test without using page object
+            //driver.Url.Should().Be("https://prepmajor.com/courses/?search=Advance");
+
+            //Validates test with page object with assertion inside the page object
+            // _searchPage.ValidateSearchURL(); 
+
+
+            //Best Practice: Validates test using page object and assertionis in the step definition
+            _searchPage.GetSearchURL().Should().Be("https://prepmajor.com/courses/?search=Advance");
+
         }
     }
 }
