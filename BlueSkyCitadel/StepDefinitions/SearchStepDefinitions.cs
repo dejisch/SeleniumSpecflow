@@ -1,6 +1,7 @@
 using BlueSkyCitadel.Hooks;
 using BlueSkyCitadel.PageObjects;
 using FluentAssertions;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
 using TechTalk.SpecFlow;
@@ -43,6 +44,13 @@ namespace BlueSkyCitadel.StepDefinitions
             //validate your test without using page object
             //driver.Url.Should().Be("https://prepmajor.com/courses/?search=Advance");
 
+
+            //validate your test without using page object
+            string expURL = "https://prepmajor.com/courses/?search=Advance";
+            driver.Url.Should().Be(expURL);
+
+
+
             //Validates test with page object with assertion inside the page object
             // _searchPage.ValidateSearchURL(); 
 
@@ -50,6 +58,10 @@ namespace BlueSkyCitadel.StepDefinitions
             //Best Practice: Validates test using page object and assertionis in the step definition
             _searchPage.GetSearchURL().Should().Be("https://prepmajor.com/courses/?search=Advance");
 
+
+            //Using NUnit
+            string expectedUrl = "https://prepmajor.com/courses/?search=Advance";
+            Assert.AreEqual(expectedUrl, driver.Url);
         }
     }
 }
