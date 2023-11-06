@@ -5897,11 +5897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\BlueSkyCitadel\\Automation\\BlueSkyCitadel3\\SeleniumSpecflow\\BlueSkyCitadel\\BlueSkyCitadel.csproj",
+      "projectUniqueName": "C:\\BlueSkyCitadel\\Automation\\BlueSkyCitadel4\\SeleniumSpecflow\\BlueSkyCitadel\\BlueSkyCitadel.csproj",
       "projectName": "BlueSkyCitadel",
-      "projectPath": "C:\\BlueSkyCitadel\\Automation\\BlueSkyCitadel3\\SeleniumSpecflow\\BlueSkyCitadel\\BlueSkyCitadel.csproj",
+      "projectPath": "C:\\BlueSkyCitadel\\Automation\\BlueSkyCitadel4\\SeleniumSpecflow\\BlueSkyCitadel\\BlueSkyCitadel.csproj",
       "packagesPath": "C:\\Users\\dejis\\.nuget\\packages\\",
-      "outputPath": "C:\\BlueSkyCitadel\\Automation\\BlueSkyCitadel3\\SeleniumSpecflow\\BlueSkyCitadel\\obj\\",
+      "outputPath": "C:\\BlueSkyCitadel\\Automation\\BlueSkyCitadel4\\SeleniumSpecflow\\BlueSkyCitadel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dejis\\AppData\\Roaming\\NuGet\\NuGet.Config",

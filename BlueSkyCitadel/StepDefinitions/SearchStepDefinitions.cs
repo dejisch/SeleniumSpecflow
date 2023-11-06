@@ -2,6 +2,7 @@ using BlueSkyCitadel.Hooks;
 using BlueSkyCitadel.PageObjects;
 using FluentAssertions;
 using NUnit.Framework;
+using NUnit.Framework.Constraints;
 using OpenQA.Selenium;
 using System;
 using TechTalk.SpecFlow;
@@ -9,9 +10,8 @@ using TechTalk.SpecFlow;
 namespace BlueSkyCitadel.StepDefinitions
 {
     [Binding]
-    public class SearchStepDefinitions
+    public class SearchStepDefinitions : WebHook
     {
-        public IWebDriver driver = WebHook.driver;
         SearchPage _searchPage = new SearchPage();
 
         [Given(@"I navigate to PrepMajor\.com")]
@@ -23,6 +23,15 @@ namespace BlueSkyCitadel.StepDefinitions
         [When(@"I click on the search field")]
         public void WhenIClickOnTheSearchField()
         {
+            //========================
+            //Without Page Obejct
+            driver.FindElement(By.Id("search-courses-input")).Click();
+
+            //=======================================
+
+
+
+            //WithPage Object
             _searchPage.ClickSearchField();
         }
 
